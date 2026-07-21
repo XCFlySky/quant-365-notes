@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>量化金融365 · 学习笔记</title>
+  <meta name="description" content="量化金融365课程学习笔记 —— 通俗易懂的量化金融自学手册">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+  <!-- Docsify 主题（vue 风格，清爽白底） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- 代码高亮 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism.min.css">
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">正在加载学习笔记…</div>
+  <script>
+    window.$docsify = {
+      name: '量化金融365 · 学习笔记',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      homepage: 'README.md',
+      relativePath: false,
+      search: {
+        placeholder: '搜索笔记内容…',
+        noData: '没有找到相关内容',
+        depth: 4
+      },
+      pagination: {
+        previousText: '← 上一节',
+        nextText: '下一节 →',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      copyCode: {
+        buttonText: '复制',
+        errorText: '复制失败',
+        successText: '已复制'
+      },
+      'flexible-alerts': {
+        style: 'flat'
+      },
+      plugins: []
+    }
+  </script>
+  <!-- Docsify 核心 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- 搜索插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <!-- 代码复制插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <!-- 分页插件（上一节/下一节） -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <!-- 提示框插件（支持 > [!NOTE] 等语法） -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@1/dist/docsify-plugin-flexible-alerts.min.js"></script>
+  <!-- 代码高亮：Python -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+</body>
+</html>
