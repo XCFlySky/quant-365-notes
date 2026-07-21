@@ -1,0 +1,23 @@
+name: quant-finance
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - statsmodels
+  - scikit-learn
+  - jupyter
+  - notebook
+  - ipykernel
+  - pip
+  - pip:
+    - arch
+    - hmmlearn
+    - pykalman
+    - cvxpy
+    - yfinance
+    - plotly
