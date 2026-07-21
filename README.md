@@ -13,7 +13,31 @@
 
 ## 📚 课程目录
 
-**第一阶段 · 量化基础**
+**第一阶段 · 量化基础（P1）**
+
+<a class="lesson-card" href="#/lessons/day001/README">
+  <span class="lc-tag">DAY 001 / 365 · 已更新 ✅</span>
+  <div class="lc-title">课程总览：365 天能学到什么</div>
+  <div class="lc-desc">量化 = 数据+模型+工程 · 11 阶段路线图 · 每天 1% 的复利 · Hello Quant 第一段代码</div>
+</a>
+
+<a class="lesson-card" href="#/lessons/day002/README">
+  <span class="lc-tag">DAY 002 / 365 · 已更新 ✅</span>
+  <div class="lc-title">量化交易 vs 主观交易</div>
+  <div class="lc-desc">巴菲特 vs Simons · 两种 alpha 的来源 · 1000 次蒙特卡洛模拟 · 混合派心法</div>
+</a>
+
+<a class="lesson-card" href="#/lessons/day003/README">
+  <span class="lc-tag">DAY 003 / 365 · 已更新 ✅</span>
+  <div class="lc-title">量化的三大流派</div>
+  <div class="lc-desc">统计套利 / 高频做市 / 因子投资 · 散户选哪派 · 三派标志性代码</div>
+</a>
+
+<a class="lesson-card" href="#/lessons/day004/README">
+  <span class="lc-tag">DAY 004 / 365 · 已更新 ✅</span>
+  <div class="lc-title">金融市场基础速览</div>
+  <div class="lc-desc">股票/债券/期货/期权/加密 · T+0 vs T+1 · 散户的真实通道与主战场选择</div>
+</a>
 
 <a class="lesson-card" href="#/lessons/day005/README">
   <span class="lc-tag">DAY 005 / 365 · 已更新 ✅</span>
@@ -41,4 +65,4 @@
 | 自测与延伸 | 自测题（附思路提示）+ 延伸阅读 | 检验吸收 |
 
 > [!TIP]
-> 页面上方有搜索框，忘记某个知识点时直接搜关键词（比如「复权」「√252」）就能跳到对应位置。
+> 页面上方有搜索框，忘记某个知识点时直接搜关键词（比如「复权」「√252」「协整」）就能跳到对应位置。
