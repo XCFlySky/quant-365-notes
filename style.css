@@ -1,0 +1,200 @@
+/* ============================================================
+   量化金融365 · 学习笔记 —— 自定义样式（简洁清爽文档风）
+   ============================================================ */
+
+:root {
+  --theme-color: #1a6ee0;          /* 主色：沉稳的蓝 */
+  --theme-color-soft: #eaf2fd;     /* 主色的浅底 */
+  --text-main: #2b3a4a;
+  --text-sub: #6b7a8d;
+  --border-soft: #e6ebf1;
+  --bg-warm: #fdf8f0;              /* 暖色提示底 */
+}
+
+body {
+  font-family: -apple-system, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--text-main);
+  letter-spacing: 0.01em;
+}
+
+/* ---------- 侧边栏 ---------- */
+.sidebar {
+  border-right: 1px solid var(--border-soft);
+  background: #fbfcfe;
+}
+.sidebar > h1 a {
+  font-size: 17px;
+  color: var(--text-main);
+  font-weight: 700;
+}
+.sidebar ul li a {
+  color: var(--text-sub);
+  font-size: 14px;
+}
+.sidebar ul li.active > a {
+  color: var(--theme-color);
+  border-right: 3px solid var(--theme-color);
+  font-weight: 600;
+}
+.sidebar ul li ul { padding-left: 12px; }
+.sidebar ul li ul li a { font-size: 13.5px; }
+
+/* ---------- 正文 ---------- */
+.content { padding-top: 40px; }
+.markdown-section {
+  max-width: 880px;
+  padding: 0 48px 60px;
+  font-size: 15.5px;
+  line-height: 1.9;
+}
+
+.markdown-section h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0 0 6px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--border-soft);
+}
+.markdown-section h1 + blockquote {
+  margin-top: 14px;
+}
+.markdown-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 44px;
+  padding-left: 12px;
+  border-left: 4px solid var(--theme-color);
+}
+.markdown-section h3 {
+  font-size: 17.5px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.markdown-section strong { color: #17355e; }
+
+/* ---------- 表格 ---------- */
+.markdown-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 14px;
+  display: table;
+  overflow: visible;
+}
+.markdown-section th {
+  background: var(--theme-color-soft);
+  color: #17355e;
+  font-weight: 700;
+  padding: 10px 14px;
+  border: 1px solid var(--border-soft);
+  white-space: nowrap;
+}
+.markdown-section td {
+  padding: 10px 14px;
+  border: 1px solid var(--border-soft);
+  vertical-align: top;
+}
+.markdown-section tr:nth-child(even) td { background: #fafbfd; }
+
+/* ---------- 代码 ---------- */
+.markdown-section code {
+  font-family: "SF Mono", "JetBrains Mono", Consolas, "Courier New", monospace;
+  background: #f1f5fa;
+  color: #b03a5b;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.88em;
+}
+.markdown-section pre {
+  background: #f6f8fb;
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+.markdown-section pre code {
+  background: transparent;
+  color: #33475b;
+  padding: 0;
+}
+.markdown-section pre[data-lang]::after {
+  top: 10px; right: 12px;
+  font-size: 11px;
+  color: #93a5bb;
+}
+
+/* ---------- 提示框（flexible-alerts 插件） ---------- */
+.markdown-section .alert {
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin: 18px 0;
+  font-size: 14.5px;
+  border: 1px solid transparent;
+}
+.markdown-section .alert p { margin: 0; }
+.markdown-section .alert p + p { margin-top: 8px; }
+
+/* ---------- 折叠块（自测题提示等） ---------- */
+.markdown-section details {
+  background: #fafbfd;
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin: 10px 0;
+}
+.markdown-section details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--theme-color);
+  font-size: 14.5px;
+}
+.markdown-section details[open] summary { margin-bottom: 8px; }
+
+/* ---------- 首页信息卡 ---------- */
+.lesson-card {
+  display: block;
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 14px 0;
+  background: #fff;
+  transition: box-shadow .18s ease, transform .18s ease;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.lesson-card:hover {
+  box-shadow: 0 6px 24px rgba(26, 110, 224, 0.10);
+  transform: translateY(-2px);
+}
+.lesson-card .lc-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--theme-color);
+  background: var(--theme-color-soft);
+  border-radius: 20px;
+  padding: 2px 12px;
+  margin-bottom: 8px;
+}
+.lesson-card .lc-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+.lesson-card .lc-desc {
+  font-size: 13.5px;
+  color: var(--text-sub);
+  margin-top: 6px;
+}
+
+/* ---------- 搜索框 ---------- */
+.search input { border-radius: 8px; }
+.search .matching-post { border-bottom: 1px solid var(--border-soft); }
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 768px) {
+  .markdown-section { padding: 0 22px 60px; font-size: 15px; }
+  .markdown-section h1 { font-size: 24px; }
+}
